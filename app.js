@@ -1,4 +1,3 @@
-
 let randomMessage = (num) => {
     Messages = ["Your limitation—it's only your imagination.", 
     "Push yourself, because no one else is going to do it for you.",
@@ -12,5 +11,5 @@ let randomMessage = (num) => {
     console.log(Messages[num]);
 }
 
-
+digit = Math.floor(Math.random() * (Messages.length + 1) );
 randomMessage(digit);
