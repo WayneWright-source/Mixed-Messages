@@ -1,4 +1,4 @@
-let randomMessage = (num) => {
+let randomMessage = () => {
     Messages = ["Your limitation—it's only your imagination.", 
     "Push yourself, because no one else is going to do it for you.",
     "Sometimes later becomes never. ...",
@@ -8,8 +8,9 @@ let randomMessage = (num) => {
     "The harder you work for something, the greater you'll feel when you achieve it.",
     "Dream bigger."
     ];
-    console.log(Messages[num]);
+    digit = Math.floor(Math.random() * (Messages.length + 1) );
+    console.log(Messages[digit]);
 }
 
-digit = Math.floor(Math.random() * (Messages.length + 1) );
-randomMessage(digit);
+
+randomMessage();
